@@ -1,0 +1,61 @@
+.user-comments-area{
+    padding: 0px 0px 0px 200px;
+    position: relative;
+}
+
+.user-list-sidebar{
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-height: 500px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.user-list{
+    padding: 0px;
+    list-style: none;
+    width:200px;
+}
+
+.user-list li{
+    display: inline-block;
+    width: 100%;
+    padding: 8px 10px;
+    background-color: #f7f7f7;
+    color: #666;
+    margin: 2px 0px;
+    border-left: 3px solid #1976d2;
+    box-sizing: border-box;
+}
+
+.user-list li:hover{
+    background-color:  #fafafa;
+    cursor: pointer;
+}
+
+.post-loader{
+    background-color: #fafafa;
+    padding:10px 15px;
+    min-height: 500px;
+    box-sizing: border-box;
+}
+
+.user-posts{
+    list-style: none;
+}
+
+
+.load-more-btn{
+    border:0px;
+    background-color: #1976d2;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 8px 10px;
+    cursor: pointer;
+}

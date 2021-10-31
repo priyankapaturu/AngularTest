@@ -1,0 +1,52 @@
+.user-post{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.user-post .user-post-title{
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    color:#1976d2;
+}
+.user-post .user-post-body{
+    color:#888;
+}
+
+
+.user-post-footer{
+    padding: 10px 0px;
+}
+
+.user-post-footer .comments-label{
+    color:#50bcdd;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.post-comments{
+    list-style: none;
+    margin-top:8px;
+}   
+
+.post-comments .post-comment{
+    padding: 10px;
+    background-color: #f9ebd2;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.post-comments li .post-commented-body{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.post-comments li .post-commented-by{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+
+}

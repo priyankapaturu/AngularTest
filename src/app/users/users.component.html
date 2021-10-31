@@ -1,0 +1,30 @@
+
+<div class="user-comments-area">
+    <!-- List of Users -->
+    <div class="user-list-sidebar">
+        <h2>User List</h2>
+        <ul class="user-list">
+            <li *ngFor="let user of userList" data-id={{user.id}} (click)="getUserPostsById(user.id)">
+                {{user.name}}
+            </li>
+        </ul>
+    </div> 
+
+    <!-- Loads User Posts -->
+    <div class="post-loader">
+        <h2>User Posts</h2>
+        <div *ngIf="userPosts.length==0">Click on a User to load his/her Posts.</div>
+        <div *ngIf="isContentLoading" class="loader"></div>
+
+        <!-- Loop all User Posts -->
+        <ul class="user-posts">
+            <li *ngFor="let post of userPosts.slice(0, howManyPostToLoadInitially)">
+                <!-- Post Component :: Passing post object as input attribute -->
+                <app-post [postObj]="post"></app-post>
+            </li>
+        </ul>
+
+        <!-- Load more user posts :: onClicking it will set property howManyPostToLoadInitially to MAX -->
+        <button class="load-more-btn" (click)="loadMorePosts()" *ngIf="showLoadMoreBtn">Load More</button>
+    </div>
+</div>

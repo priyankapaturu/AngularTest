@@ -1,0 +1,15 @@
+<div class="user-post">
+    <div class="user-post-title">{{postObj.title}}</div>
+    <div class="user-post-body">{{postObj.body}}</div>
+    <div class="user-post-footer">
+        <span class="comments-label" (click)="loadPostCommentsByPostId(postObj.id)">Comments</span>
+        <div *ngIf="isContentLoading" class="loader"></div>
+        <ul class="post-comments">
+            <li class="post-comment" *ngFor="let comment of comments">
+                <div class="post-comment-body">{{comment.body}}</div>
+                <span class="post-commented-by">- {{comment.name}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
